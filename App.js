@@ -70,26 +70,7 @@ export default function App() {
         </TouchableOpacity>
       </View>
       <ScrollView>
-        <View style={styles.musicContainer}>
-          {filteredHits.length ? (
-            filteredHits.map((music) => (
-              <View style={styles.music} key={music.id}>
-                <MusicContainer music={music} />
-              </View>
-            ))
-          ) : (
-            <View>
-              <Text>No Results Found: {query}</Text>
-              <Button
-                title="Go Back"
-                onPress={() => {
-                  setFilteredHits(topHits);
-                  setQuery("");
-                }}
-              />
-            </View>
-          )}
-        </View>
+        <Text>Hello</Text>
       </ScrollView>
       <StatusBar style="auto" />
     </SafeAreaView>
